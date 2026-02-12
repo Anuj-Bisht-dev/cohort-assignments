@@ -10,7 +10,7 @@
 
   --accent-green: rgba(20, 226, 136, 0.5);
   --accent-green-soft: rgba(34, 197, 94, 0.15);
-  --color-brand: lab(79.9844% -59.6292 22.5096);
+  --color-brand: #3ee4a7;
 
   --btn-primary-bg: #ffffff;
   --btn-primary-text: #020617;
@@ -84,7 +84,7 @@ body {
 }
 
 .logo {
-  height: 22px;
+  height: 21px;
   cursor: pointer;
 }
 
@@ -354,7 +354,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 30px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.02);
 }
 
 .bottom-visual-feature {
@@ -414,45 +414,175 @@ body {
   width: 100%;
   margin-top: 28px;
   text-align: center;
+  margin-bottom: 20vh;
 }
+
+/* ENTERPRISE SECTION */
 
 /* ASSISTANT */
-.assistant-preview {
-  padding: 120px 0;
-  background: #02050f;
-  text-align: center;
+
+.enterprise-section {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.assistant-preview h2 {
-  font-size: 40px;
-  margin-bottom: 16px;
+/* container */
+.enterprise-section-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 24px;
 }
 
-.assistant-preview p {
-  color: var(--text-secondary);
-  max-width: 700px;
-  margin: 0 auto 48px;
+/* badge */
+.enterprise-section-badge {
+  color: #3ee4a7;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-/* ENTERPRISE */
-.enterprise {
-  padding: 120px 0;
-  text-align: center;
-}
-
-.enterprise-features {
+/* header */
+.enterprise-section-header {
   display: flex;
-  gap: 24px;
-  max-width: 1000px;
-  margin: 48px auto 0;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
-.enterprise-card {
-  flex: 1;
-  padding: 28px;
-  background: var(--bg-card);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-subtle);
+.enterprise-section-header > div > h1 {
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+.enterprise-section-header > div > p {
+  margin-top: 16px;
+  max-width: 600px;
+  color: #b3b3b3;
+}
+
+/* CTA */
+.enterprise-section-cta {
+  padding: 8px 34px;
+  margin-top: auto;
+  background: #fff;
+  color: #000;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+/* features */
+.enterprise-section-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+.enterprise-section-features > div > span {
+  color: #3ee4a7;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.enterprise-section-features > div > h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.enterprise-section-features > div > p {
+  margin-top: 20px;
+  color: #b3b3b3;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* card */
+.enterprise-section-card {
+  height: 60vh;
+  width: 115vh;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-radius: 18px;
+  overflow: hidden;
+  background-image: url('assets/enterprise-card-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.enterprise-section-card:hover {
+  filter: opacity(0.7);
+}
+
+.enterprise-section-card > div:first-child {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.enterprise-section-card > div:first-child > small {
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.enterprise-section-card > div:first-child > h2 {
+  margin-top: 20px;
+  width: 22rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.enterprise-section-card > div:first-child > a {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* stats */
+.enterprise-section-stats {
+  padding-top: 130px;
+  display: flex;
+  gap: 40px;
+}
+
+.enterprise-section-stats > div {
+  width: 190px;
+}
+
+.enterprise-section-stats > div > strong {
+  font-size: 38px;
+  font-weight: 500;
+  display: block;
+}
+
+.enterprise-section-stats > div > span {
+  font-size: 15px;
+  color: #cfcfcf;
+}
+
+/* image */
+.enterprise-section-image {
+  background: url('your-image-here.jpg') center / cover no-repeat;
+}
+
+/* logos */
+
+.enterprise-section-logos {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 84px;
+  margin: 10px auto 0;
+}
+
+.enterprise-section-logos > span > img {
+  width: 100px;
+  margin-top: 30px;
+  filter: grayscale(100%) brightness(150%) opacity(0.8);
 }
 
 /* CASE STUDIES */

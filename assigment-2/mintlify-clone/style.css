@@ -862,7 +862,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 25px 0 15px 0;
   flex-wrap: wrap;
   padding: 0 40px;
 }
@@ -887,13 +887,13 @@ body {
 
 .social-link {
   text-decoration: none;
-  color: #94a3b8;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
-.social-link:hover {
-  color: #ffffff;
+.social-link img {
+  width: 22px;
+  filter: opacity(0.3) invert(1);
 }
 
 /* Navigation Columns */
@@ -950,7 +950,7 @@ body {
 }
 
 .footer-security-grade-section > img {
-  width: 50px;
+  width: 45px;
 }
 
 /* Bottom Section */

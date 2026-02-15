@@ -1,7 +1,7 @@
 # 🌍 Web & Networking Fundamentals — Blog Series
 ### By Anuj Singh Bisht
 
-Welcome to my curated technical blog series.
+Welcome to my cohort 2026 blog series.
 
 ---
 
